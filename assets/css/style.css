@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: grey;
+    border: 2px solid;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 0 0 0 70px;
+    flex: 2 0 content;
+}
+
+nav {
+    display: flex;
+    flex: 1 0 0;
+    padding: 0 10px 0 0;
+}
+
+nav a {
+   flex: 1 0 33%;
+   text-align: right;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid;
+    width: 20%;
+}
+
+main {
+    border: 2px solid;
+    width: 80%;
+}
+
+.align {
+    display: flex;
+}
+
+.biography {
+    /* height: 500px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid;
+}
+
+#bio-photo {
+    padding: 15px;
+    width: 25%;
+    height: auto;
+    min-width: 0;
+    flex: 0 1 500px;
+    object-fit: contain;
+}
+
+#bio-article {
+    text-align: center;
+    flex: 1 0 0;
+}
+
+#bio-article h2 {
+    padding: 20px;
+    font-size: 28px;
+}
+
+#project1 {
+    padding: 15px;
+    border: 2px solid;
+    margin: 20px;
+    height: auto;
+    width: 95%;
+}
+
+#other-projects {
+    border: 2px solid;
+}
+
+#projects-nav {
+    text-align: center;
+}
