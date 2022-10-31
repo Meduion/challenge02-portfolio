@@ -1,19 +1,20 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     background-color: grey;
     border: 2px solid;
-    height: 100px;
+    height: 150px;
     width: 100%;
 }
 
 h1 {
     font-size: 48px;
     padding: 0 0 0 70px;
-    flex: 2 0 content;
+    flex: 1.5 1 700px;
+    min-width: 0;
 }
 
 nav {
@@ -25,15 +26,43 @@ nav {
 nav a {
    flex: 1 0 33%;
    text-align: right;
+   padding: 3px;
 }
 
 aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     border: 2px solid;
     width: 20%;
+    min-width: 144px;
+}
+
+.aside-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    width: 100%;
+    flex: 0 0 500px;
+}
+
+.aside-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    width: 100%;
+    max-height: 1167px;
+    min-height: 0;
+}
+
+.aside-bottom h2 {
+    align-self: center;
 }
 
 main {
@@ -46,18 +75,10 @@ main {
 }
 
 .biography {
-    /* height: 500px; */
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    border: 2px solid;
-}
-
-.projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     border: 2px solid;
 }
@@ -67,8 +88,8 @@ main {
     width: 25%;
     height: auto;
     min-width: 0;
-    flex: 0 1 500px;
-    object-fit: contain;
+    max-width: 325px;
+    flex: 0 1 325px;
 }
 
 #bio-article {
@@ -81,18 +102,43 @@ main {
     font-size: 28px;
 }
 
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid;
+}
+
+.project1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 80px 0;
+}
+
 #project1 {
     padding: 15px;
     border: 2px solid;
-    margin: 20px;
     height: auto;
-    width: 95%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.other-projects {
+    border: 2px solid;
+    width: 100%;
+    min-width: 0;
+    max-width: 30%;
+    margin: 15px;
 }
 
 #other-projects {
-    border: 2px solid;
-}
-
-#projects-nav {
-    text-align: center;
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
 }
