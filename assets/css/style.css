@@ -205,6 +205,13 @@ nav a {
 
 /* End of Classes */
 
+/* Pseudo-Classes */
+.other-projects-img:hover {
+    transform: scale(1.1);
+}
+
+/* End of Pseudo-Classes */
+
 /* Classes with Sub-Elements */
 .text-block h3 {
     font-size: 24px;
@@ -240,6 +247,17 @@ nav a {
 }
 
 /* End of IDs */
+
+/* Pseudo-IDs */
+#bio-photo:hover {
+    transform: scale(1.1);
+}
+
+#project1:hover {
+    transform: scale(1.1);
+}
+
+/* End of Pseudo-IDs */
 
 /* ID Sub-Elements */
 #bio-article h2 {
