@@ -1,13 +1,27 @@
+* {
+    font-family: consolas, 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+
+/* Elements */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: grey;
-    border: 2px solid;
+    background-image: url("../images/header-background1.jpg");
+    background-size: auto;
+    border-bottom: 2px solid;
     height: 150px;
     width: 100%;
+    font-family: consolas, 'Courier New', Courier, monospace;
+}
+
+nav {
+    display: flex;
+    flex: 1 0 0;
+    padding: 0 70px 0 0;
 }
 
 h1 {
@@ -17,16 +31,8 @@ h1 {
     min-width: 0;
 }
 
-nav {
-    display: flex;
-    flex: 1 0 0;
-    padding: 0 10px 0 0;
-}
-
-nav a {
-   flex: 1 0 33%;
-   text-align: right;
-   padding: 3px;
+h2 {
+    font-size: 32px;
 }
 
 aside {
@@ -34,10 +40,40 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    border: 2px solid;
+    flex-wrap: nowrap;
+    border-right: 2px solid;
     width: 20%;
-    min-width: 144px;
+    min-width: 161px;
+}
+
+main {
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+}
+
+/* End of Elements */
+
+/* Sub-Elements */
+nav a {
+    flex: 1 0 33%;
+    text-align: right;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* End of Sub-Elements */
+
+/* Classes in order of appearance in HTML */
+.align {
+    display: flex;
 }
 
 .aside-top {
@@ -45,9 +81,10 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
     width: 100%;
     flex: 0 0 500px;
+    background-image: url("../images/aside-top-background.jpg");
+    background-size: cover;
 }
 
 .aside-bottom {
@@ -55,23 +92,10 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
     width: 100%;
-    max-height: 1167px;
-    min-height: 0;
-}
-
-.aside-bottom h2 {
-    align-self: center;
-}
-
-main {
-    border: 2px solid;
-    width: 80%;
-}
-
-.align {
-    display: flex;
+    height: 100%;
+    background-image: url("../images/aside-bottom-background.jpg");
+    background-size: contain;
 }
 
 .biography {
@@ -80,38 +104,22 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid;
-}
-
-#bio-photo {
-    padding: 15px;
-    width: 25%;
-    height: auto;
-    min-width: 0;
-    max-width: 325px;
-    flex: 0 1 325px;
-}
-
-#bio-article {
-    text-align: center;
-    flex: 1 0 0;
-}
-
-#bio-article h2 {
-    padding: 20px;
-    font-size: 28px;
+    background-image: url("../images/bio-background.jpg");
+    background-size: contain;
 }
 
 .projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid;
+    background-image: url("../images/projects-background.jpg");
+    background-size: contain;
 }
 
 .project1 {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -121,24 +129,121 @@ main {
     margin: 80px 0;
 }
 
-#project1 {
-    padding: 15px;
-    border: 2px solid;
+.project1-position {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: #05163a;
+    font-size: 22px;
     height: auto;
-    max-width: 100%;
-    min-width: 0;
+    min-height: 0;
+    width: auto;
+    flex: 0 1 0;
+    padding: 10px;
 }
 
 .other-projects {
-    border: 2px solid;
-    width: 100%;
     min-width: 0;
-    max-width: 30%;
+    max-width: 50%;
     margin: 15px;
 }
 
-#other-projects {
+.other-projects-position {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.other-projects-img {
     height: auto;
     max-width: 100%;
     min-width: 0;
 }
+
+.text-block2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #05163a;
+    font-size: 22px;
+    height: auto;
+    min-height: 0;
+    width: auto;
+    flex: 0 1 0;
+    padding: 4px;
+}
+
+.foot-div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-right: 2px solid;
+    width: 20%;
+    min-width: 161px;
+    background-image: url("../images/aside-bottom-background.jpg");
+    background-size: auto;
+}
+
+.foot-div2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 2px solid;
+    width: 80%;
+    background-image: url("../images/projects-background.jpg");
+    background-size: cover;
+}
+
+/* End of Classes */
+
+/* Classes with Sub-Elements */
+.text-block h3 {
+    font-size: 24px;
+}
+
+.foot-div2 a {
+    padding: 25px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* End of Classes with Sub-Elements */
+
+/* IDs */
+#bio-photo {
+    padding: 15px;
+    width: 100%;
+    min-width: 0;
+    max-width: 325px;
+}
+
+#bio-article {
+    text-align: center;
+    flex: 1 1 0;
+    font-size: 20px;
+}
+
+#project1 {
+    padding: 15px;
+    height: auto;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* End of IDs */
+
+/* ID Sub-Elements */
+#bio-article h2 {
+    padding: 20px;
+    font-size: 28px;
+}
+
+/* End of ID Sub-Elements */
