@@ -280,3 +280,102 @@ nav a:hover {
 }
 
 /* End of ID Sub-Elements */
+
+/* Media Queries */
+/* Tablets */
+@media screen and (max-width: 992px) {
+    nav {
+        padding: 0 30px 0 0;
+    }
+    nav a{
+        text-align: center;
+    }
+    .biography {
+        flex-direction: column;
+    }
+    .project1 {
+        margin: 20px 0;
+    }
+    .biography p {
+        margin-top: 15px;
+    }
+  }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+    nav {
+        padding: 0;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .biography {
+        flex-wrap: nowrap;
+    }
+    .text-block {
+        font-size: 18px;
+        bottom: 30px;
+        left: 30px;
+    }
+    .text-block2 {
+        font-size: 16px;
+        bottom: 6px;
+        left: 6px;
+    }
+    .text-block h3 {
+        font-size: 18px;
+    }
+    .foot-div2 a {
+        font-size: 18px;
+        padding: 8px;
+    }
+    #bio-photo {
+        padding: 15px;
+        width: 100%;
+        min-width: 0;
+        max-width: 275px;
+    }
+    #bio-article {
+        font-size: 18px;
+    }
+  }
+
+  /* Small smartphones */
+  @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        padding: 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    aside {
+        min-width: 121px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    .text-block {
+        font-size: 14px;
+        bottom: 20px;
+        left: 20px;
+        width: 57%;
+    }
+    .text-block2 {
+        bottom: 4px;
+        left: 4px;
+        font-size: 13px;
+    }
+    .foot-div1 {
+        min-width: 121px;
+    }
+    #bio-article {
+        font-size: 16px;
+    }
+  }
+
+  /* End of Media Queries */
