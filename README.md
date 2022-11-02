@@ -14,3 +14,14 @@ N/A
 
 Website is deployed at the following address: https://meduion.github.io/personal-landing-page/
 
+Screenshot of completed webpage:
+
+![Brian Wyatt Web Development Webpage](/assets/images/personal-landing-page-screenshot.jpeg)
+
+## Credits
+  
+N/A
+  
+## License
+  
+Please refer to the LICENSE in the repo.
