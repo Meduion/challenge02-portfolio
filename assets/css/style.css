@@ -72,6 +72,13 @@ nav a {
 
 /* End of Sub-Elements */
 
+/* Pseudo-Sub-Elements */
+nav a:hover {
+     color: darkviolet;
+}
+
+/* End of Pseudo-Sub-Elements */
+
 /* Classes in order of appearance in HTML */
 .align {
     display: flex;
@@ -224,6 +231,13 @@ nav a {
 }
 
 /* End of Classes with Sub-Elements */
+
+/* Pseudo Classes with Sub-Elements */
+.foot-div2 a:hover {
+    color: darkviolet;
+}
+
+/* End of Pseudo Classes with Sub-Elements */
 
 /* IDs */
 #bio-photo {
